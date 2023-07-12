@@ -4,6 +4,7 @@
 	--personal: var(--primary);
 	--light: #EEE;
 	--grey: #888;
+	--grey2: #ccc;
 	--dark: #313154;
 	--danger: #ff5b57;
 
@@ -41,7 +42,7 @@ section {
 }
 
 h2 {
-	color: var(--primary);
+	color: var(--dark);
 	font-size: 1rem;
 	font-weight: 400;
 	margin-bottom: 3.5rem;
@@ -77,6 +78,11 @@ h4 {
 	font-size: 1.5rem;
 	font-weight: 700;
 }
+.greeting .title input::placeholder { 
+	font-size: 1rem;
+	font-weight: 400;
+}
+
 
 .create-todo input[type="text"] {
 	display: block;
@@ -238,5 +244,5 @@ input:checked ~ .bubble::after {
 
 .todo-item.done .todo-content input {
 	text-decoration: line-through;
-	color: var(--grey);
+	color: var(--grey2);
 }
